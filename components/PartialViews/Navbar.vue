@@ -1,6 +1,8 @@
 <template>
-  <div class="px-10 py-8 w-full h-10 bg-blue-800 flex justify-between items-center">
-    <div class="flex justify-start">
+  <div
+    class="flex bg-blue-700 border-b border-gray-200 fixed top-0 inset-x-0 z-100 h-16 items-center"
+  >
+    <div class="w-full max-w-screen-xl relative mx-auto px-8 flex items-center justify-between">
       <nuxt-link to="/" class="flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -13,16 +15,65 @@
             d="M20 8H4c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2zm-2-4H6c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2z"
           />
         </svg>
-        <div class="pl-4 font-medium text-xl text-gray-100">Lighthouse Development</div>
+        <div
+          class="hidden md:inline md:pl-4 md:font-medium md:text-xl md:text-gray-100"
+        >Lighthouse Development</div>
       </nuxt-link>
+
+      <div class="hidden lg:flex lg:items-center lg:justify-end px-6">
+        <nuxt-link to="/" class="pl-6 font-medium text-md text-white uppercase">Our Work</nuxt-link>
+        <nuxt-link to="/" class="pl-6 font-medium text-md text-white uppercase">About Us</nuxt-link>
+        <nuxt-link
+          to="/playbook"
+          class="pl-6 font-medium text-md text-white uppercase"
+        >Project Lifecycles</nuxt-link>
+        <nuxt-link to="/" class="pl-6 font-medium text-md text-white uppercase">Contact Us</nuxt-link>
+      </div>
+
+      <div class="lg:hidden">
+        <button @click="toggleMenu">
+          <svg
+            class="fill-current text-white w-4 h-4"
+            v-if="isOpen"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
     </div>
-    <div class="flex justify-end">
-      <nuxt-link to="/" class="pl-6 font-medium text-md text-white uppercase">Our Work</nuxt-link>
-      <nuxt-link to="/" class="pl-6 font-medium text-md text-white uppercase">About Us</nuxt-link>
-      <nuxt-link to="/playbook" class="pl-6 font-medium text-md text-white uppercase">Project Lifecycles</nuxt-link>
-      <nuxt-link to="/" class="pl-6 font-medium text-md text-white uppercase">Contact Us</nuxt-link>
-    </div>
+    <nav v-show="!isOpen" class="absolute top-0 left-0 w-screen h-screen bg-gray-100">
+      <button class="px-8 py-6 w-full flex justify-end" @click="toggleMenu">
+        <svg
+          class="fill-current text-gray-900 w-4 h-4"
+          v-if="!isOpen"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
+          />
+        </svg>
+      </button>
+    </nav>
   </div>
 </template>
+
+<script>
+export default {
+  props: [],
+  data() {
+    return {
+      isOpen: false
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.isOpen = !this.isOpen;
+    }
+  }
+};
+</script>
 
 

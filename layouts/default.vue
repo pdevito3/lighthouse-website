@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar/>
+    <Navbar />
     <nuxt class="font-sans antialiased" />
   </div>
 </template>
