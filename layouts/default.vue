@@ -2,16 +2,19 @@
   <div>
     <Navbar />
     <nuxt class="font-sans antialiased" />
+    <Footer />
   </div>
 </template>
 
 
 <script>
 import Navbar from "~/components/PartialViews/Navbar.vue";
+import Footer from "~/components/PartialViews/Footer.vue";
 
 export default {
   components: {
-    Navbar
+    Navbar,
+    Footer
   }
 };
 </script>
