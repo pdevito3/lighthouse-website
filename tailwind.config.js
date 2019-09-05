@@ -6,13 +6,15 @@
  */
 module.exports = {
   theme: {
-    extend:{
+    extend: {
+      fontFamily: {},
       minWidth: {
         sm: "640px",
         md: "",
         lg: ""
       },
-      screens:{
+      screens: {
+        xs: "411px",
         sm: "640px",
         md: "768px",
         lg: "1024px",
@@ -28,15 +30,15 @@ module.exports = {
         zeroLgOnly: { min: "0px", max: "1279px" }
       },
       spacing: {
-        '72': '18rem',
-        '84': '21rem',
-        '96': '24rem',
-        '108': '27rem',
-        '130': '30rem',
-        '142': '33rem',
-        '154': '36rem',
-        '166': '39rem',
-        '178': '42rem',
+        "72": "18rem",
+        "84": "21rem",
+        "96": "24rem",
+        "108": "27rem",
+        "130": "30rem",
+        "142": "33rem",
+        "154": "36rem",
+        "166": "39rem",
+        "178": "42rem"
       }
     }
   },

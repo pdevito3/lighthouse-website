@@ -30,7 +30,7 @@
         <nuxt-link to="/contactus" class="pl-6 font-medium text-md text-white uppercase">Contact Us</nuxt-link>
       </div>
 
-      <div class="lg:hidden">
+      <div class="lg:hidden absolute top-0 right-0 px-4 py-1">
         <button @click="toggleMenu">
           <svg
             class="fill-current text-white w-4 h-4"
@@ -46,7 +46,7 @@
 
     <!-- doing the nav like this sucks because i need to keep the height an stuf in sync. also not a big fan of the full screen atm. refactor TODO  -->
     <nav v-show="isOpen" class="absolute top-0 left-0 w-screen h-screen bg-gray-100">
-      <button class="px-12 py-6 w-full flex justify-end" @click="toggleMenu">
+      <button class="absolute top-0 right-0 px-4 py-6 w-full flex justify-end" @click="toggleMenu">
         <svg
           class="fill-current text-gray-900 w-4 h-4"
           v-if="isOpen"

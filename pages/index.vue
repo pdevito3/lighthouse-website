@@ -6,59 +6,11 @@
           class="text-5xl text-gray-800 font-bold text-left leading-tight tracking-tight"
         >Custom Software To Grow Your Business</p>
       </div>
-      <div class="mx-4 w-1/3 max-w-md flex bg-gray-300">
-        <form class="m-4">
-          <label for="company" class>Your Company</label>
-          <input
-            v-model="company"
-            type="text"
-            id="company"
-            class="px-2 py-2 block bg-white border border-grey-200 rounded shadow hover:border-grey"
-            placeholder="Company Name"
-          >
 
-          <label for="email" class>Email Address</label>
-          <input
-            v-model="email"
-            type="text"
-            id="email"
-            class="px-2 py-2 block bg-white border border-grey-200 rounded shadow hover:border-grey"
-            placeholder="Email Address"
-          >
+      <button
+        class="mx-auto py-3 px-6 block bg-blue-500 hover:bg-blue-400 text-white font-bold rounded uppercase"
+      >Free Consultation</button>
 
-          <label for="email" class>Email Address</label>
-          <input
-            v-model="email"
-            type="text"
-            id="email"
-            class="px-2 py-2 block bg-white border border-grey-200 rounded shadow hover:border-grey"
-            placeholder="Email Address"
-          >
-          
-          <label for="email" class>Email Address</label>
-          <input
-            v-model="email"
-            type="text"
-            id="email"
-            class="px-2 py-2 block bg-white border border-grey-200 rounded shadow hover:border-grey"
-            placeholder="Email Address"
-          >
-
-          <label for="email" class>Email Address</label>
-          <input
-            v-model="email"
-            type="text"
-            id="email"
-            class="px-2 py-2 block bg-white border border-grey-200 rounded shadow hover:border-grey"
-            placeholder="Email Address"
-          >
-
-          <button class="mx-auto py-3 px-6 block bg-blue-500 hover:bg-blue-400 text-white font-bold rounded uppercase">
-            Free Consultation
-          </button>
-        </form>
-        
-      </div>
       <!-- <div class="flex justify-around py-32">
         <div>
           <svg
@@ -122,7 +74,7 @@
             />
           </svg>
         </div>
-      </div> -->
+      </div>-->
     </div>
   </div>
 </template>
