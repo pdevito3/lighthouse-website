@@ -13,9 +13,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
     "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/pwa": "^3.0.0-0"
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "nuxt": "^2.0.0",
+    "qs": "^6.8.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^1.0.0",
