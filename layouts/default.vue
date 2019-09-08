@@ -1,20 +1,33 @@
 <template>
   <div>
     <Navbar />
-    <nuxt class="font-sans antialiased" />
-    <Footer />
+    <nuxt class="font-sans antialiased block" />
+    <MyFooter />
   </div>
 </template>
 
 
 <script>
 import Navbar from "~/components/PartialViews/Navbar.vue";
-import Footer from "~/components/PartialViews/Footer.vue";
+import MyFooter from "~/components/PartialViews/MyFooter.vue";
 
 export default {
   components: {
     Navbar,
-    Footer
+    MyFooter
+  },
+  head() {
+    return {
+      title: "Lighthouse Development | Leading Atlanta Software Development",
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: "website-description",
+          name: "website-description",
+          content: this.$store.state.websiteDescription
+        }
+      ]
+    };
   }
 };
 </script>

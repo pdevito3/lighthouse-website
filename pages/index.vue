@@ -1,17 +1,61 @@
 <template class="">
-  <div class="bg-white h-screen">
-    <div class="py-48 flex">
-      <div class="w-2/3 flex justify-left content-center">
+  <div class="h-full">
+    <div class="bg-white px-6 mt-24 sm:mt-40 sm:px-12 md:mt-50 md:flex md:px-32 lg:px-40 xl:px-48">
+      <div class="lg:w-2/3">
         <p
-          class="text-5xl text-gray-800 font-bold text-left leading-tight tracking-tight"
-        >Custom Software To Grow Your Business</p>
+          class="text-3xl text-center sm:text-5xl text-blue-700 font-semibold xs:font-bold xs:text-left leading-tight tracking-tight"
+        >We Build Custom Software To Grow Your Business</p>
+        <p class="text-lg text-center pt-4 text-blue-900 font-medium xs:text-left xs:text-2xl">
+          Whether you're outgrowing your off-the-shelf software, need a custom web application, or just need a new marketing website,
+          we're here to help. Whatever your idea, we can build it, on time and on budget.
+        </p>
       </div>
-
+    </div>
+    <div class="mt-12 sm:mt-0 w-full px-6 sm:px-12 md:flex md:px-32 lg:px-40 xl:px-48">
       <button
-        class="mx-auto py-3 px-6 block bg-blue-500 hover:bg-blue-400 text-white font-bold rounded uppercase"
-      >Free Consultation</button>
+        class="py-3 px-6 cursor-pointer bg-blue-500 rounded hover:bg-blue-400 zeroXsOnly:w-full sm:block sm:mt-16"
+      >
+        <nuxt-link to="/contactus" class="text-white font-bold uppercase">Free Consultation</nuxt-link>
+      </button>
+    </div>
+  </div>
+  <!-- <div class="w-1/2 mt-48">
+      <p
+        class="text-4xl text-blue-700 font-semibold text-left"
+      >We Build Custom Software To Grow Your Business</p>
+    </div>
+    <div class="w-1/2 mt-48 flex md:justify-center lg:justify-end">
+      <div class>
+        <div class="pt-2 text-md font-medium flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current text-green-300"><circle cx="12" cy="12" r="10" class="primary"/><path class="fill-current text-white" d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"/></svg>
+          <p class="pl-4">Marketing Websites</p>
+          </div>
+        <div class="pt-2 text-md font-medium flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current text-green-300"><circle cx="12" cy="12" r="10" class="primary"/><path class="fill-current text-white" d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"/></svg>
+          <p class="pl-4">Custom Business Applications</p>
+        </div>
+        <div class="pt-2 text-md font-medium flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current text-green-300"><circle cx="12" cy="12" r="10" class="primary"/><path class="fill-current text-white" d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"/></svg>
+          <p class="pl-4">Web Portal</p>
+        </div>
+        <div class="pt-2 text-md font-medium flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current text-green-300"><circle cx="12" cy="12" r="10" class="primary"/><path class="fill-current text-white" d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"/></svg>
+          <p class="pl-4">CRM</p>
+        </div>
+        <div class="pt-2 text-md font-medium flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current text-green-300"><circle cx="12" cy="12" r="10" class="primary"/><path class="fill-current text-white" d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"/></svg>
+          <p class="pl-4">SaaS Applications</p>
+        </div>
+        <div class="mt-16">
+          <nuxt-link
+            to="/contactus"
+            class="py-3 px-6 bg-blue-500 hover:bg-blue-400 text-white font-bold rounded uppercase"
+          >Free Consultation</nuxt-link>
+        </div>
+      </div>
+  </div>-->
 
-      <!-- <div class="flex justify-around py-32">
+  <!-- <div class="flex justify-around py-32">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -74,11 +118,16 @@
             />
           </svg>
         </div>
-      </div>-->
-    </div>
-  </div>
+  </div>-->
 </template>
 
+<script>
+export default {
+  data() {
+    return {};
+  }
+};
+</script>
 
 <style>
 /* Sample `apply` at-rules with Tailwind CSS

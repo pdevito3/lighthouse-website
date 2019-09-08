@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto">
+  <div class="mx-auto h-full">
     <div class="mt-24 w-full h-48 bg-white text-center mx-auto sm:mt-24 md:px-2 lg:px-12">
       <p class="px-2 text-5xl font-semibold text-gray-800">Let's get in touch</p>
       <p class="text-3xl py-4 text-gray-800 tracking-tight sm:leading-loose">
@@ -103,16 +103,19 @@
         </form>
       </div>
     </div>
+    <!-- <MyFooter /> -->
   </div>
 </template>
 
 
 <script>
 import Navbar from "~/components/PartialViews/Navbar.vue";
+import MyFooter from "~/components/PartialViews/MyFooter.vue";
 
 export default {
   components: {
-    Navbar
+    Navbar,
+    MyFooter
   }
 };
 </script>

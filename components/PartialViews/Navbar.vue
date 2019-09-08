@@ -2,7 +2,7 @@
   <div
     class="flex bg-blue-700 border-b border-gray-200 fixed top-0 inset-x-0 z-100 h-16 items-center"
   >
-    <div class="w-full max-w-screen-xl relative mx-auto px-8 flex items-center justify-between">
+    <div class="w-full max-w-screen-xl relative mx-auto px-8 md:px-20 xl:px-48 flex items-center justify-between">
       <nuxt-link to="/" class="flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -21,13 +21,13 @@
       </nuxt-link>
 
       <div class="hidden lg:flex lg:items-center lg:justify-end px-6">
-        <nuxt-link to="/" class="pl-6 font-medium text-md text-white uppercase">Our Work</nuxt-link>
-        <nuxt-link to="/about" class="pl-6 font-medium text-md text-white uppercase">About Us</nuxt-link>
-        <nuxt-link
+        <nuxt-link exact-active-class="" to="/" class="pl-6 font-medium text-md text-white uppercase">Our Work</nuxt-link>
+        <nuxt-link exact-active-class="" to="/about" class="pl-6 font-medium text-md text-white uppercase">About Us</nuxt-link>
+        <nuxt-link exact-active-class=""
           to="/playbook"
           class="pl-6 font-medium text-md text-white uppercase"
         >Project Lifecycles</nuxt-link>
-        <nuxt-link to="/contactus" class="pl-6 font-medium text-md text-white uppercase">Contact Us</nuxt-link>
+        <nuxt-link exact-active-class="" to="/contactus" class="pl-6 font-medium text-md text-white uppercase">Contact Us</nuxt-link>
       </div>
 
       <div class="lg:hidden absolute top-0 right-0 px-4 py-1">

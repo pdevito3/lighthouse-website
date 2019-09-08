@@ -25,6 +25,7 @@ module.exports = {
         mdOnly: { min: "768px", max: "1023px" },
         mdLgOnly: { min: "768px", max: "1279px" },
         lgOnly: { min: "1024px", max: "1279px" },
+        zeroXsOnly: { min: "0px", max: "410px" },
         zeroSmOnly: { min: "0px", max: "767px" },
         zeroMdOnly: { min: "0px", max: "1023px" },
         zeroLgOnly: { min: "0px", max: "1279px" }
