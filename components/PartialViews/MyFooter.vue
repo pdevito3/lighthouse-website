@@ -3,11 +3,11 @@
     <div class="hidden sm:block sm:px-6 sm:py-2 sm:w-1/3">
       <p class="font-medium">Lighthouse Development</p>
       <p
-        class="pt-4 text-sm"
+        class="pt-2 text-sm"
       >We design and develop modern websites and custom software solutions that provide value exactly where it's needed to elevate your business.</p>
       <p
-        class="text-sm py-2"
-      >©{{ new Date().getFullYear() }} Lighthouse Development, LLC | All Rights Reserved</p>
+        class="text-sm py-3"
+      >&copy; {{ new Date().getFullYear() }} Lighthouse Development, LLC | All Rights Reserved</p>
     </div>
     <div class="mx-auto text-center sm:hidden">
       <p

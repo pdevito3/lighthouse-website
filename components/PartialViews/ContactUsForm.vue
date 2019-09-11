@@ -97,16 +97,13 @@
         </div>
       </div>
       <div
-        class="w-full text-center py-3 rounded-b bg-green-200 text-green-800"
-        v-show="subscribed"
-      >
-        <span class="font-semibold">Success!</span> We'll be in touch as soon as possible.
-      </div>
-      <div
         class="w-full text-center py-3 rounded-b bg-red-200 text-red-800"
         v-show="error"
       >Something went wrong. Please try again</div>
     </form>
+    <div class="w-full text-center py-8 rounded bg-green-200 text-green-800" v-show="subscribed">
+      <span class="font-semibold">Success!</span> We'll be in touch as soon as possible.
+    </div>
   </div>
 </template>
 

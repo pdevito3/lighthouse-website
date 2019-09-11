@@ -6,17 +6,19 @@
           class="text-3xl text-center sm:text-5xl text-blue-700 font-semibold xs:font-bold xs:text-left leading-tight tracking-tight"
         >We Build Custom Software To Grow Your Business</p>
         <p class="text-lg text-center pt-4 text-blue-900 font-medium xs:text-left xs:text-2xl">
-          Whether you're outgrowing your off-the-shelf software, need a custom web application, or just need a new marketing website,
+          Whether you're outgrowing your off-the-shelf software, considering a custom web application, or just need a new marketing website,
           we're here to help. Whatever your idea, we can build it, on time and on budget.
         </p>
       </div>
     </div>
-    <div class="mt-12 sm:mt-0 w-full px-6 sm:px-12 md:flex md:px-32 lg:px-40 xl:px-48">
-      <button
-        class="py-3 px-6 cursor-pointer bg-blue-500 rounded hover:bg-blue-400 zeroXsOnly:w-full sm:block sm:mt-16"
-      >
-        <nuxt-link to="/contactus" class="text-white font-bold uppercase">Free Consultation</nuxt-link>
-      </button>
+    <div
+      class="sm:px-12 md:flex md:px-32 lg:px-40 xl:px-48 w-full flex justify-center sm:justify-start"
+    >
+      <nuxt-link to="/contactus" class="w-full px-2 sm:w-72 sm:px-0">
+        <button
+          class="py-3 px-6 mt-6 cursor-pointer bg-blue-500 rounded hover:bg-blue-400 sm:block sm:mt-16 text-white font-bold uppercase w-full"
+        >Free Consultation</button>
+      </nuxt-link>
     </div>
   </div>
   <!-- <div class="w-1/2 mt-48">
@@ -50,7 +52,7 @@
           <nuxt-link
             to="/contactus"
             class="py-3 px-6 bg-blue-500 hover:bg-blue-400 text-white font-bold rounded uppercase"
-          >Free Consultation</nuxt-link>
+          >Free Consultation</d>
         </div>
       </div>
   </div>-->

@@ -2,7 +2,9 @@
   <div
     class="flex bg-blue-700 border-b border-gray-200 fixed top-0 inset-x-0 z-100 h-16 items-center"
   >
-    <div class="w-full max-w-screen-xl relative mx-auto px-8 md:px-20 xl:px-48 flex items-center justify-between">
+    <div
+      class="w-full max-w-screen-xl relative mx-auto px-8 md:px-12 xl:px-48 flex items-center justify-between"
+    >
       <nuxt-link to="/" class="flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -21,13 +23,26 @@
       </nuxt-link>
 
       <div class="hidden lg:flex lg:items-center lg:justify-end px-6">
-        <nuxt-link exact-active-class="" to="/" class="pl-6 font-medium text-md text-white uppercase">Our Work</nuxt-link>
-        <nuxt-link exact-active-class="" to="/about" class="pl-6 font-medium text-md text-white uppercase">About Us</nuxt-link>
-        <nuxt-link exact-active-class=""
+        <nuxt-link
+          exact-active-class
+          to="/"
+          class="px-3 font-medium text-md text-white uppercase"
+        >Our Work</nuxt-link>
+        <nuxt-link
+          exact-active-class
+          to="/about"
+          class="px-3 font-medium text-md text-white uppercase"
+        >About Us</nuxt-link>
+        <nuxt-link
+          exact-active-class
           to="/playbook"
-          class="pl-6 font-medium text-md text-white uppercase"
-        >Project Lifecycles</nuxt-link>
-        <nuxt-link exact-active-class="" to="/contactus" class="pl-6 font-medium text-md text-white uppercase">Contact Us</nuxt-link>
+          class="px-3 font-medium text-md text-white uppercase"
+        >Project Lifecycle</nuxt-link>
+        <nuxt-link
+          exact-active-class
+          to="/contactus"
+          class="px-3 font-medium text-md text-white uppercase"
+        >Contact Us</nuxt-link>
       </div>
 
       <div class="lg:hidden absolute top-0 right-0 px-4 py-1">
@@ -45,7 +60,7 @@
     </div>
 
     <!-- doing the nav like this sucks because i need to keep the height an stuf in sync. also not a big fan of the full screen atm. refactor TODO  -->
-    <nav v-show="isOpen" class="absolute top-0 left-0 w-screen h-screen bg-gray-100">
+    <nav v-show="isOpen" class="absolute top-0 left-0 w-full h-screen bg-gray-100">
       <button class="absolute top-0 right-0 px-4 py-6 w-full flex justify-end" @click="toggleMenu">
         <svg
           class="fill-current text-gray-900 w-4 h-4"
